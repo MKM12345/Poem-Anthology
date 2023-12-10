@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f; /* Dark Blue Background */
+            color: #00BFFF; /* Dodger Blue Text Color */
+        }
+
+        header {
+            background-color: #00274E; /* Slightly Lighter Blue Header */
+            padding: 1em;
+            text-align: center;
+        }
+
+        h1 {
+            color: #39ff14; /* Neon Green H1 Text */
+            margin: 0;
+            text-shadow: 2px 2px 4px #39ff14; /* Neon Green Text Shadow */
+            animation: borderAnimation 1.5s infinite;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003366; /* Darker Blue Navigation Background */
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #39ff14; /* Neon Green Navigation Text */
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+            text-shadow: 1px 1px 2px #39ff14; /* Neon Green Navigation Text Shadow */
+            animation: borderAnimation 1.5s infinite;
+        }
+
+        nav a:hover {
+            background-color: #004080; /* Darker Hover Color */
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .poem {
+            margin-bottom: 2em;
+            line-height: 1.6;
+            box-shadow: 0 0 10px #39ff14; /* Neon Green Box Shadow */
+            padding: 1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #00274E; /* Slightly Lighter Blue Footer Background */
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0px 0px 10px #39ff14; /* Neon Green Footer Box Shadow */
+            animation: borderAnimation 1.5s infinite;
+        }
+
+        #featured {
+            background-color: #00274E; /* Slightly Lighter Blue Featured Background */
+            text-align: center;
+        }
+
+        #featured h2 {
+            color: #39ff14; /* Neon Green Featured Section Title */
+            text-shadow: 2px 2px 4px #39ff14; /* Neon Green Text Shadow */
+            animation: borderAnimation 1.5s infinite;
+        }
+
+        .featured-poem {
+            margin-bottom: 2em;
+            line-height: 1.6;
+            box-shadow: 0 0 10px #39ff14; /* Neon Green Box Shadow */
+            padding: 1em;
+        }
+
+        /* Border Animation */
+        @keyframes borderAnimation {
+            0% { border-bottom: 2px solid #39ff14; }
+            50% { border-bottom: 2px solid #39ff14; }
+            100% { border-bottom: 2px solid #39ff14; }
+        }
+        *{
+  margin:0;
+  padding:0;
+}
+
+.container{  padding-top: 20px;
+  padding-bottom: 20px;}
+body{
+  background-color: #111845;
+}
+
+.background-img{
+  background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");
+height: 400px;
+  width: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% auto;
+  padding:20px;
+  border: 1px solid #2a3cad;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #2a3cad;
+  position: relative;
+}
+.background-img-two{
+  background-image: url("https://cdn.vox-cdn.com/thumbor/5bP0aw7XgRpcPMrj2df-mxPfeu8=/0x0:5500x3667/1200x800/filters:focal(1474x319:2354x1199)/cdn.vox-cdn.com/uploads/chorus_image/image/68999817/GettyImages_1231828580.0.jpg");
+height: 400px;
+  width: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% auto;
+  padding:20px;
+  border: 1px solid #2a3cad;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #2a3cad;
+  position: relative;
+}
+.content h2{ font-size:19px;}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #f0a591;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  overflow: auto;
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+ 
+}
+
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+   
+  }
+ 
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+   
+  }
+ 
+ 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Poem Anthology</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#poems">Poems</a>
+        <a href="poems.html">Full Anthology</a> <!-- Link to the full anthology page -->
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section>
+        <h2 id="home">Welcome to my Poem Anthology!</h2>
+    </section>
+    <section id="featured">
+        <h2>Featured Poems</h2>
+        <div class="featured-poem">
+        <div class="container">
+    <div class="background-img">
+      <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h3>Implication poem</h3>
+            <h4>I love English</h4>
+            <p>
+Oh I love English so much,<br>
+
+Love it so much,<br>
+
+Yes, so very much,<br>
+
+Love it, Love it, Love it,<br>
+
+I love it so much.<br>
+
+ <br>
+
+How the teacher drone on & on,<br>
+
+Loquaciously talking about their son,<br>
+
+Yes, I find it so interesting,<br>
+
+The vast amount of piling homework,<br>
+
+Turning my eyes red,<br>
+
+  <br>
+
+How my attention wavers,<br>
+
+I look out the window,<br>
+
+Slowly scanning the area,<br>
+
+I see a bird, oooh! Pretty!<br>
+
+And notice every feature for the next 20 minutes,<br>
+
+ <br>
+
+Oh yes, I find it interesting,<br>
+
+So very much,<br>
+
+I love it so much,<br>
+
+I feel like my heads gonna explode.<br>
+
+And my insides gonna cook inside.<br>
+
+ <br>
+
+The stacked-up buildings of paper,<br>
+
+Oh very good, very good, indeed,<br>
+
+I look at the everlasting tower,<br>
+
+My eyes straining to see the top,<br>
+
+I’m gonna need to buy a flamethrower soon.<br>
+
+ <br>
+
+“Oh”, the teacher says,<br>
+
+“Come back for extra revision at lunch”, <br>
+
+“Cool”, I mutter,<br>
+
+I’d love to come,<br>
+
+But I have urgent business in the football pitch,<br>
+
+So I have to rush!<br>
+
+Maybe next time”.<br>
+            </p>
+        </div>
+        </div>
+    </div>
+  </div>
+        <div class="background-img-two">
+      <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+            <h3>Protest Poem</h3>
+            <h4>Grr...Pen Ink.</h4>
+            <p>
+Why does my pen ink run out so quickly?<br>
+I write an essay with and it runs out,<br>
+Why is the quality so sickly?<br>
+Even when I write a small story route!<br>
+<br>
+The refills my poor dad has to buy,<br>
+
+It cost him a fortune!<br>
+
+Even if it’s a parker pen- oh my! <br>
+
+For just a few notes and homework in my room <br>
+
+ <br>
+
+The top is dented for uncapping the pen again and again, <br>
+
+The boring motions is the norm,<br>
+
+Even if the window shows a bored hen, <br>
+
+I can’t even finish a form,<br>
+
+<br>
+
+The vast amount of energy use,<br>
+
+Just because the pen can’t write.<br>
+
+Even if my mum offers her award-winning moose, <br>
+
+It does nothing to my pounding fright.<br>
+
+ <br>
+
+So what do we stand for:<br>
+
+GIVE GOOD PENS! <br>
+
+What do we stand for:<br>
+
+KICK FAT HENS!<br>
+
+What do we stand for:<br>
+
+MAKE IT LAST LONGER!<br>
+
+What do we want it for: <br>
+
+TO MAKE US STRONGER!<br>
+            </p>
+        </div>
+       
+        </div>
+    </div>
+  </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 MKM123435. All rights reserved.</p>
+    </footer>
+</body>
+</html>
