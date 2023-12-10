@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Anthology</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111845;
+            color: #fff;
+        }
+
+        header {
+            background-color: #00274E;
+            padding: 1em;
+            text-align: center;
+        }
+
+        h1 {
+            color: #39ff14;
+            margin: 0;
+            text-shadow: 2px 2px 4px #39ff14;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003366;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #39ff14;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+            text-shadow: 1px 1px 2px #39ff14;
+        }
+
+        nav a:hover {
+            background-color: #004080;
+        }
+
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #2a3cad;
+            border-radius: 4px;
+            box-shadow: 0px 0px 5px #2a3cad;
+            overflow: hidden;
+        }
+
+        .box:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: 0.5s;
+            pointer-events: none;
+        }
+
+        .box:hover:before {
+            left: -50%;
+            transform: skewX(-5deg);
+        }
+
+        .box .content {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 1px solid #f0a591;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
+            overflow: auto;
+        }
+
+        .box span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .box span:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        .box span:nth-child(2) {
+            transform: rotate(90deg);
+        }
+
+        .box span:nth-child(3) {
+            transform: rotate(180deg);
+        }
+
+        .box span:nth-child(4) {
+            transform: rotate(270deg);
+        }
+
+        .box span:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #50dfdb;
+            animation: animate 4s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+
+            50% {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+
+            50.1% {
+                transform: scaleX(1);
+                transform-origin: right;
+            }
+
+            100% {
+                transform: scaleX(0);
+                transform-origin: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Poem Anthology</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="full_anthology.html">Full Anthology</a>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <u><h3>Implication poem</h3></u>
+                <h4>I love English</h4>
+                <p>
+                    Oh I love English so much,<br>
+
+Love it so much,<br>
+
+Yes, so very much,<br>
+
+Love it, Love it, Love it,<br>
+
+I love it so much.<br>
+
+ <br>
+
+How the teacher drone on & on,<br>
+
+Loquaciously talking about their son,<br>
+
+Yes, I find it so interesting,<br>
+
+The vast amount of piling homework,<br>
+
+Turning my eyes red,<br>
+
+  <br>
+
+How my attention wavers,<br>
+
+I look out the window,<br>
+
+Slowly scanning the area,<br>
+
+I see a bird, oooh! Pretty!<br>
+
+And notice every feature for the next 20 minutes,<br>
+
+ <br>
+
+Oh yes, I find it interesting,<br>
+
+So very much,<br>
+
+I love it so much,<br>
+
+I feel like my heads gonna explode.<br>
+
+And my insides gonna cook inside.<br>
+
+ <br>
+
+The stacked-up buildings of paper,<br>
+
+Oh very good, very good, indeed,<br>
+
+I look at the everlasting tower,<br>
+
+My eyes straining to see the top,<br>
+
+I’m gonna need to buy a flamethrower soon.<br>
+
+ <br>
+
+“Oh”, the teacher says,<br>
+
+“Come back for extra revision at lunch”, <br>
+
+“Cool”, I mutter,<br>
+
+I’d love to come,<br>
+
+But I have urgent business in the football pitch,<br>
+
+So I have to rush!<br>
+
+Maybe next time”.<br>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <u><h3>Protest Poem</h3></u>
+                <h4>Grr...Pen Ink.</h4>
+                <p>
+                    Why does my pen ink run out so quickly?<br>
+I write an essay with and it runs out,<br>
+Why is the quality so sickly?<br>
+Even when I write a small story route!<br>
+<br>
+The refills my poor dad has to buy,<br>
+
+It cost him a fortune!<br>
+
+Even if it’s a parker pen- oh my! <br>
+
+For just a few notes and homework in my room <br>
+
+ <br>
+
+The top is dented for uncapping the pen again and again, <br>
+
+The boring motions is the norm,<br>
+
+Even if the window shows a bored hen, <br>
+
+I can’t even finish a form,<br>
+
+<br>
+
+The vast amount of energy use,<br>
+
+Just because the pen can’t write.<br>
+
+Even if my mum offers her award-winning moose, <br>
+
+It does nothing to my pounding fright.<br>
+
+ <br>
+
+So what do we stand for:<br>
+
+GIVE GOOD PENS! <br>
+
+What do we stand for:<br>
+
+KICK FAT HENS!<br>
+
+What do we stand for:<br>
+
+MAKE IT LAST LONGER!<br>
+
+What do we want it for: <br>
+
+TO MAKE US STRONGER!<br>
+
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <u><h3>Diatribe</h3></u>
+                <h4>THEODORE</h4>
+                <p>
+                   Theodore, treacherous traitor, eating all my italian pizza.<br>
+                   Me and my mamma missions, making me turn a blind eye.<br>
+                                                               To your diabolical deliverences, rampaging raids, pathetic paces,<br>
+                   TO EAT EVERYTHING I OWN!<br>
+                   You even took a bite of the murderous mushrooms!<br>
+                   I had nothing for Princess Peach,<br>
+                   Even if I checked my award-winning warehouse,<br>
+                   Where only the tattered remains of burnt crust and vegetables lay,<br>
+                   Oh, not even my old age will stop me from revenge, even in my old honda!<br>
+                   I was starving for weeks,<br>
+                   chowing on leaves,<br>
+                   eating whatever I could,<br>
+                   My business almost collapsing!<br>
+                   Now even though I'm older, frailer, weaker,<br>
+                   I will chomp and guzzle your desserts,<br>
+                   Eat your treats,<br>
+                   Devour your cakes,<br>
+                   To see how you like to starve!<br>
+                   Boisterous Boy,<br>
+                   Pathetic Pooter,<br>
+                   Dilapidated dozer,<br>
+                   Touching Turner,<br>
+                   Wait till I come for vengeanence,<br>
+                   Oh ho ho, mamma mia!<br>
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <u><h3>Music poem</h3></u>
+                <h4>Dead ends</h4>
+                <p>
+                    At the dawn of night,<br>
+                    A mournful sight,<br>
+                    Remembering dead friends,<br>
+                    The soldiers sit around a campfire, sitting in dead ends.<br>
+                    <br>
+                    But the camp gets attacked and maimed,<br>
+                    Muskets fire to the warriors of famed,<br>
+                    Tanks come to give a hand, <br>
+                    As they make their last stand.<br>
+                    <br>
+                    Now they are all dead. <br>
+                    Hounds of the enemy fed,<br>
+                    But there is a glimmer of hope,<br>
+                    As reinforcements come down the slope.<br>
+                    <br>
+                    A massive phalanx of troops,<br>
+                    Their presence makes the enemy swoop,<br>
+                    Yelling war cries and banging of drums,<br>
+                    The army kills the enemy in a chant of hums.<br>
+                    <br>
+                    As they leave no one alive,<br>
+                    They march in one massive bee hive,<br>
+                    They go to celebrate,<br>
+                    Rejoicing the enemies fate,<br>
+                    <br>
+                    First they dance slowly,<br>
+                    Keeping their gaze lowly,<br>
+                    Then they get animated,<br>
+                    Their dances fated.<br>
+                    <br>
+                    A mix of happy and sad sound,<br>
+                    Their break finally found,<br>
+                    As they remember their dead friends,<br>
+                    This time, though, in no dead ends.
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <u><h3>Sensory Poem</h3></u>
+                <h4>Percy Pigs</h4>
+                <p>
+                    The sweet smell wafted up my nose,<br>
+                    As the percy pig stayed for a pose.<br>
+                    Worse then my brothers cavities, the smell,<br>
+                    Sent my skull reverberating like a bell.<br>
+                    <br>
+                    I gently smushed it in my palm,<br>
+                    It felt like sheep's wool in a farm,<br>
+                    A cloud so high in the sky,<br>
+                    The joy there - oh my.<br>
+                    <br>
+                    I looked - a pause in time.<br>
+                    I can't think of a suitable rhyme.<br>
+                    A look of simple simplicity,<br>
+                    Not a speck of any hidden atrocity,<br>
+                    <br>
+                    Ah, yes! The time I have been waiting for,<br>
+                    As soon as I put one in my mouth, I wanted more,<br>
+                    The juicy, strwberry taste, flooded my glands,<br>
+                    I even started licking my hands!<br>
+                    <br>
+                    Like a gummy bear, rubbery and so nice,<br>
+                    Even sweeter then sweet-chicken rice!<br>
+                    Filling light in the hall of dark,<br>
+                    The delicious taste left a profound mark.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
